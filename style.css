@@ -1,0 +1,161 @@
+:root {
+  --darkBlue: hsl(217, 19%, 35%);
+  --blue: hsl(214, 17%, 51%);
+  --lightBlue: hsl(212, 23%, 69%);
+  --lightGray: hsl(210, 46%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--lightGray);
+  font-family: "Manrope", sans-serif;
+  font-size: 1.3rem;
+}
+
+.card {
+  width: 32.7rem;
+  border-radius: 10px;
+  overflow: hidden;
+
+  background-color: #fff;
+
+  position: relative;
+}
+
+.drawersImg {
+  background: url(./images/drawers.jpg) no-repeat;
+  width: 100%;
+  height: 20rem;
+  background-size: cover;
+}
+
+/********** card Content ***********/
+.cardContent {
+  padding: 3.6rem 3.2rem 2rem;
+}
+
+.cardContent > h1 {
+  margin-bottom: 1.2rem;
+
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 24px;
+
+  color: var(--darkBlue);
+}
+
+.cardContent > p {
+  margin-bottom: 3.2rem;
+
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 20px;
+
+  color: var(--blue);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerLeft {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.footerLeft > img {
+  width: 4rem;
+  border-radius: 50px;
+}
+
+.footerText {
+  font-size: 1.3rem;
+  line-height: 20px;
+}
+
+.footerText > p {
+  font-weight: 700;
+  color: var(--darkBlue);
+}
+
+.footerText > span {
+  font-weight: 500;
+  color: var(--lightBlue);
+}
+
+.circle {
+  height: 3.2rem;
+  width: 3.2rem;
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+}
+
+.shareBefore {
+  background-color: var(--lightGray);
+
+  color: var(--blue);
+}
+
+/****** SHARE clicked *******/
+.shareMobile {
+  visibility: hidden;
+  width: 100%;
+  padding: 1.6rem 3.2rem;
+  background-color: var(--darkBlue);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.shareMobileLeft {
+  display: flex;
+  align-items: center;
+  gap: 2.1rem;
+}
+
+.shareMobileLeft > p {
+  font-weight: 500;
+  font-size: 1.3rem;
+  letter-spacing: 5px;
+
+  color: var(--lightBlue);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.shareAfter {
+  background-color: var(--blue);
+  color: white;
+}
